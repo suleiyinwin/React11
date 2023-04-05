@@ -11,6 +11,7 @@ function App() {
   const [notLogin,Login] = useState(0)
   return (
     <div className='App'>
+      
         <BrowserRouter>
         <Routes>
             <Route exact path="/profile/:id" element={<Profile/>}/>
@@ -23,7 +24,7 @@ function App() {
             <NavLink to={"/home"}>Home</NavLink>
             <NavLink to={"/about"}>About</NavLink>
             <NavLink to={"/contact"}>Contact</NavLink>
-            <NavLink to={'/profile/'}>Profile</NavLink>
+            <NavLink to={'/profile/123'}>Profile</NavLink>
             <NavLink  to={'/admin'}>For Admin</NavLink>
           </nav> 
         </BrowserRouter>
